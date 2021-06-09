@@ -1,5 +1,8 @@
 ################
-# Martín René - @martinvilu
+# Nohtyp
+# Mauricio Boyé - @
+# Facundo Vistebins - @
+# Ivo Spezzacatena - @ivospezza
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
