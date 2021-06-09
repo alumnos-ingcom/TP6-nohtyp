@@ -1,7 +1,7 @@
 ################
 # Nohtyp
 # Mauricio Boyé - @MauriBoye
-# Facundo Vistebins - @
+# Facundo Bistevins - @FacuBiste
 # Ivo Spezzacatena - @ivospezza
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
