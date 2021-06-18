@@ -38,23 +38,72 @@ def anagrama(cadena1, cadena2):
                 
                 palabra2 = palabra2.replace(caracter,"")
     
-    todo_minuscula = palabra1.lower()
+    todo_minuscula1 = palabra1.lower()   
     
-    lista1 = list(todo_minuscula)
+    todo_minuscula2 = palabra2.lower()    
     
-    todo_minuscula = palabra2.lower()
-    
-    lista2 = list(todo_minuscula)
-    
+    cadena_de_acentos =  "á é í ó ú"
+       
+    lista1 = list(todo_minuscula1)
+    lista2 = list(todo_minuscula2)
     
     cantidad_de_coincidencias = 0
     cantidad_de_letras = 0
     
     
     for letra_2 in lista2:
+        
         cantidad_de_letras = cantidad_de_letras + 1
         
+        if cadena_de_acentos.find(letra_2) > -1:
         
+            if letra_2 == "á":
+                
+                todo_minuscula2 = todo_minuscula2.replace(letra_2, "a")
+                
+            elif letra_2 == "é":
+                
+                todo_minuscula2 = todo_minuscula2.replace(letra_2, "e")
+                
+            elif letra_2 == "í":
+                
+                todo_minuscula2 = todo_minuscula2.replace(letra_2, "i")
+                
+            elif letra_2 == "ó":
+                
+                todo_minuscula2 = todo_minuscula2.replace(letra_2, "o")
+                
+            elif letra_2 == "ú":
+                
+                todo_minuscula2 = todo_minuscula2.replace(letra_2, "u")
+                
+    for letra_1 in lista1:
+        
+        if cadena_de_acentos.find(letra_1) > -1:
+        
+            if letra_1 == "á":
+                
+                todo_minuscula1 = todo_minuscula1.replace(letra_1, "a")
+                
+            elif letra_1 == "é":
+                
+                todo_minuscula1 = todo_minuscula1.replace(letra_1, "e")
+                
+            elif letra_1 == "í":
+                
+                todo_minuscula1 = todo_minuscula1.replace(letra_1, "i")
+                
+            elif letra_1 == "ó":
+                
+                todo_minuscula1 = todo_minuscula1.replace(letra_1, "o")
+                
+            elif letra_1 == "ú":
+                
+                todo_minuscula1 = todo_minuscula1.replace(letra_1, "u")
+                
+    lista1 = list(todo_minuscula1)
+    lista2 = list(todo_minuscula2)
+    
     for letra in lista1:
         
         try:
