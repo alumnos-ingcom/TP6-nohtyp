@@ -9,11 +9,14 @@
 
 # Reemplazar por las funciones del ejercicio
 
+import random
+
+import apoyo
 
 def principal():
-    """Toda la interacción con el usuario va acá"""
-    pass
-
+    
+    apoyo.archivo_generator(500)
+    
 if __name__ == "__main__":
     principal()
 
