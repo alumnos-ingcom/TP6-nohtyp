@@ -28,7 +28,7 @@ def codificador(texto_base, rotado):
                     texto_cifrado = []
                     texto_cifrado_caracteres = ""
                     i = 0
-                    while i < len(texto):
+                    while i < (len(texto)-1):
                         if (ord(texto[i])+int(rotado)) <= ord("z"):
                             texto_cifrado.append(ord(texto[i])+int(rotado))
                             texto_cifrado_caracteres = texto_cifrado_caracteres + (chr(texto_cifrado[i]))
