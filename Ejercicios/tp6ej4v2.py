@@ -18,6 +18,10 @@ que se encuentra en 'apoyo'.
 """
 def genera_archivo(texto):
     
+    """
+    Esta funcion convierte un texto en archivo, se esta usando
+    para hacer un texto aleatorio.
+    """
     nombre = input("ingrese el nombre del archivo \n\n" )
     
     nombre = list(nombre)
@@ -34,18 +38,15 @@ def principal():
     
     respuesta = input("desea generar un archivo?\n\n      Y - N\n\n")
     
-    if respuesta == "y":
+    if respuesta == "y" or respuesta == "Y":
         
         cantidad= apoyo.ingreso_entero("cuandas palabras desea en su archivo?\n")
         
         genera_archivo(apoyo.texto_generator(cantidad))
     
     nombre = input("ingrese el nombre del archivo a codificar:\n")
-    
     nombre = list(nombre)
-    
     nombre.append(".txt")
-    
     nombre = "".join(nombre)
     
     with open(nombre, "r", 1, "utf-8") as texto:
