@@ -8,6 +8,8 @@
 """
 Ejercicio N°6
 """
+import random
+
 import tp6ej1
 
 def hace_etiqueta(contenido, etiqueta):
@@ -32,6 +34,8 @@ def archivo_html(nombre):
     '''
     Crea un archivo html con un nombre ingresado por el usuario
     '''
+    color_de_fondo = random.randint(-9999, 9999)
+    
     nombre_final = nombre + ".html"
     encabezado1 = hace_etiqueta('Hola HTML', 'h1')
     encabezado2 = hace_etiqueta('Hola HTML', 'h2')
@@ -41,7 +45,7 @@ def archivo_html(nombre):
     parrafo = hace_etiqueta('Mama estoy en internet', 'p')
     with open(nombre_final, "x", 1, "utf-8") as archivo:
         archivo.write("<html>\n"
-                      "    <body>\n"
+                     f"    <body bgcolor = #{color_de_fondo}>\n"
                      f"        {encabezado1}\n"
                      f"        {encabezado2}\n"
                      f"        {encabezado3}\n"
