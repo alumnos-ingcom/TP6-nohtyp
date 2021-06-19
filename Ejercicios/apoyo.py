@@ -11,7 +11,7 @@
 
 import random
 
-def archivo_generator(cantidad_de_palabras):
+def texto_generator(cantidad_de_palabras):
     """
     esta funcion genera un archivo con texto aleatorio en base a las palabras
     y conectores que tiene, si le quieren agregar cualquier cosa ahi dice como
@@ -53,12 +53,6 @@ def archivo_generator(cantidad_de_palabras):
     texto.append(palabras[random.randint(-11,10)])
     
     texto_final = " ".join(texto)
-    
-    with open("aleatorio.txt", "w", 1, "utf-8") as archivo:
-        
-        archivo.write(texto_final)
-        
-        
         
     return texto_final
 
