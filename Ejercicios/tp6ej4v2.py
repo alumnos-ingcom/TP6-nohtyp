@@ -40,7 +40,13 @@ def principal():
         
         genera_archivo(apoyo.texto_generator(cantidad))
     
-    nombre = input("ingrese el nombre del archivo a dodificar:\n")
+    nombre = input("ingrese el nombre del archivo a codificar:\n")
+    
+    nombre = list(nombre)
+    
+    nombre.append(".txt")
+    
+    nombre = "".join(nombre)
     
     with open(nombre, "r", 1, "utf-8") as texto:
         
